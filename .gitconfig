@@ -1,0 +1,25 @@
+[user]
+	email = kadopoly@users.noreply.github.com
+    name = kadopoly
+[color]
+    ui = auto
+[gui]
+    encoding = utf-8
+[alias]
+    co = checkout
+    st = status
+    ci = commit
+    br = branch
+    top = rev-parse --show-toplevel
+[diff]
+    tool = meld
+[difftool "meld"]
+    cmd = meld $LOCAL $REMOTE
+[merge]
+    tool = meld
+[mergetool "meld"]
+    cmd = meld $LOCAL $BASE $REMOTE --auto-merge
+[core]
+    quotepath = false
+    autocrlf = input
+    editor = nvim -c \"set fenc=utf-8\"
